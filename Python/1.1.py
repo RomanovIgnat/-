@@ -4,11 +4,11 @@ import sys
 
 
 def get_coin_func():
-    week_dict = {0: 5, 1: 10, 2: 7, 3: 5, 4: 0, 5: 4, 6: 0}
+    week_dict = {0: 0.5, 1: 1, 2: 0.7, 3: 0.5, 4: 0, 5: 0.4, 6: 0}
 
     def coin_func():
 
-        if random.randint(1, 10) <= week_dict[datetime.date.today().weekday()]:
+        if random.random() <= week_dict[datetime.date.today().weekday()]:
             print("решка", file=sys.stdout)
         else:
             print("орел", file=sys.stdout)
