@@ -1,7 +1,7 @@
-GET
-POST
-CONNECT
-TRACE
+GET - Запрос каких-либо данных
+POST - передача данных пользователя ресурсу
+CONNECT - создает TCP/IP туннель
+TRACE - 
 PUT
 OPTIONS
 HEAD
